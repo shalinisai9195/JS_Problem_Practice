@@ -1,0 +1,25 @@
+Problem : 1
+Fix the code to Sum of the digits present in the number
+
+let n = 123;
+let sum = 0;
+  while(n > 0){
+    let last_num = n % 10;
+    sum = sum + last_num;
+    n = n/10;
+    }
+
+console.log(Math.floor(sum));
+
+Problem: 2
+//Fix the code to Sum of all numbers using IIFE function
+const arr = [9,8,5,6,4,3,2,1];
+let sum = (function(arr){
+    var ans = 0;
+   arr.forEach(element => {
+      ds += element;
+   });
+return ans;
+})(arr);
+
+console.log(sum);

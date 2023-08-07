@@ -1,0 +1,119 @@
+Problem: 1 
+Write a code to print the numbers in the array
+
+Solution:
+var new_Arr = [];
+ for (var i = 1; i <= 11; i++) {
+    new_Arr.push(i)
+}
+console.log(new_Arr);
+
+// Problem: 2
+//Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)
+Solution:
+let new_string = "";
+ for (var i = 11; i > 0; i-- ) {
+    if(i == 1){
+        new_string += i
+        break; 
+    }
+   new_string += i + " "
+}
+console.log(new_string);
+
+Problem: 3
+Write a code to replace the array value — If the number is even, replace it with ‘even’.
+
+Solution:
+let numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (let i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+  numsArr[i] = 'even'
+ }
+}
+console.log(numsArr);
+
+Problem: 4
+Write a code to replace the array value — If the index is even, replace it with ‘even’.
+
+Solution:
+let numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(i %2 == 0 )
+ {
+ numsArr[i] = 'even'
+ }
+}
+console.log(numsArr);
+
+//Problem: 5
+// Write a code to add all the numbers in the array
+
+let numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let sum = 0;
+numsArr.map((e)=>{
+   sum = e + sum
+})
+console.log(sum)
+
+Problem: 6
+//Write a code to add the even numbers only
+
+let numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let sum=0;
+numsArr.map((e) =>{
+  if(e%2 == 0 ){
+    sum += e
+   }
+})
+console.log(sum)
+
+//Problem: 7
+//Write a code to add the even numbers and subract the odd numbers
+
+let numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let sum=100;
+
+numsArr.map((e) =>{
+  if(e%2 == 0 ){
+    sum += e
+   }else{
+    sum -= e
+   }
+})
+console.log(sum)
+
+// Problem: 8
+//Write a code to print inner arrays
+
+let numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+
+for(let i=0; i < numsArr.length; i++){
+   console.log(`Array(${numsArr[i].length}) ${numsArr[i]}`);
+}
+
+// Problem: 9
+//Write a code to print elements in the inner arrays
+
+let numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+let str_all=[];
+for (let i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i] 
+   for(let j =0; j < inner_array.length; j++){
+    str_all.push(inner_array[j])
+   }
+}
+console.log(str_all.join(''));
+
+//Problem: 10
+//Write a code to print elements in the inner arrays in reverse
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+let str_all=[];
+for (let i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i] 
+   for(let j =0; j < inner_array.length; j++){
+    str_all.push(inner_array[j])
+   }
+}
+console.log(str_all.reverse().join(' '));
